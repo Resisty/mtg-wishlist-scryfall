@@ -2,7 +2,7 @@
 
 # What
 
-Quick 'n shitty script to -abuse- use the scryfall api for obtaining rough pricing on cards in your wishlist.
+Quick 'n shitty script to ~~abuse~~ use the scryfall api for obtaining rough pricing on cards in your wishlist.
 
 # How
 
