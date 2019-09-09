@@ -45,7 +45,6 @@ Grenzo, Dungeon Warden        |      0.68|         6.19
 Rakdos, the Showstopper       |       0.7|         6.89
 Jhoira of the Ghitu           |      0.83|         7.72
 Kaseto, Orochi Archmage       |      0.94|         8.66
-  1 ---
 Sasaya, Orochi Ascendant      |      1.09|         9.75
 Scrap Trawler                 |      1.35|        11.10
 Crackleburr                   |      1.39|        12.49
