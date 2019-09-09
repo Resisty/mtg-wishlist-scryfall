@@ -20,7 +20,7 @@ Stop asking so many questions.
 Using the `example.txt` list of cards, sorting by price, you would get something like the following:
 
 ```
-(venv🐍 ) ~/git/github/mtg_wishlist_pricer 🌈  🐴  🌯  python pricer.py wishlist.txt -s price
+(venv🐍 ) ~/git/github/mtg_wishlist_pricer 🌈  🐴  🌯  python pricer.py example.txt -s price
 You can find the following cards for as low as the following prices in usd...
 Name                          |     Price|Running Total
 Squee's Embrace               |      0.14|         0.14
