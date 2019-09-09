@@ -73,7 +73,6 @@ Knacksaw Clique               |      4.47|        79.62
 Metalluc Mimic                |      6.09|        85.71
 Austere Command               |      6.22|        91.93
 Door of Destinies             |      6.45|        98.38
-  1 venv/
 Nemesis of Reason             |      6.57|       104.95
 Patron of the Orochi          |      6.97|       111.92
 Mayael’s Aria                 |      7.33|       119.25
