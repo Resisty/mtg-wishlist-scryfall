@@ -1,4 +1,5 @@
 venv/
 *.pyc
 *.txt
+!requirements.txt
 *.csv

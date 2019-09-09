@@ -90,14 +90,17 @@ def main(args):
             set_price(card, actual_card.json(), args.currency)
         time.sleep(.1)
         cards.append(card)
-    name, price = 'Name', 'Price'
+    name, price, running = 'Name', 'Price', 'Running Total'
     LOGGER.debug("Final cards list:\n%s", pprint.pformat(cards))
     print(f'You can find the following cards for as low as the following prices in {args.currency}...')
-    print(f"{name:<30}|{price:<10}")
+    print(f"{name:<30}|{price:>10}|{running:>13}")
+    running = 0.0
+    cards = sorted(cards, key=lambda x: x[args.sort])
     for card in cards:
-        print(f"{card['name']:<30}|{card['price']:>10}")
+        running += card['price']
+        print(f"{card['name']:<30}|{card['price']:>10}|{running:>13.2f}")
     print('='*41)
-    print(f"Grand total: {'':<17}|{sum([i['price'] for i in cards])}")
+    print(f"Grand total: {'':<17}|{sum([i['price'] for i in cards]):>10.2f}")
 
 
 
@@ -113,6 +116,10 @@ if __name__ == '__main__':
                         help='Verbosity',
                         action='count',
                         default=1)
+    PARSER.add_argument('-s', '--sort',
+                        help='Sort by name or price',
+                        default='name',
+                        choices=['name', 'price'])
     PARSER.set_defaults(func=main)
     ARGS = PARSER.parse_args()
     LEVELS = [logging.WARNING, logging.INFO, logging.DEBUG]
